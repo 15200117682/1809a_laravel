@@ -47,3 +47,4 @@ Route::get('/pay/weixin', 'Wechat\PayController@pay');      //微信支付
 
 //商品
 Route::get('/goods/list/{goods_id?}', 'Goods\GoodsController@list');      //商品展示
+Route::get('/goods/cachegoods/{goods_id?}', 'Goods\GoodsController@cacheGoods');      //商品缓存
