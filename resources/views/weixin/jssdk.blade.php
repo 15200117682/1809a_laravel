@@ -53,7 +53,7 @@
                                 console.log(res1);
                             }
                         });
-                    })
+                    });
                     $.ajax({
                         url : '/wx/js/getImg?img='+img,     //将上传的照片id发送给后端
                         type: 'get',
