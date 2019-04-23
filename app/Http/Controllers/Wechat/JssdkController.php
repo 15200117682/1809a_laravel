@@ -35,7 +35,7 @@ class JssdkController extends Controller
 
     public function getImg()
     {
-        echo '<pre>';print_r($_GET);echo '</pre>';
+        print_r($_GET);echo '</pre>';
     }
 
 }
