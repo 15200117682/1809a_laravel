@@ -5,19 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSSDK</title>
+    <title>jssdk</title>
 </head>
 <body>
 
-
-
 <button id="btn1">选择照片</button>
 
-<img src="" alt="" id="imgs0" width="300">
-<hr>
-<img src="" alt="" id="imgs1"  width="300">
-<hr>
-<img src="" alt="" id="imgs2"  width="300">
 
 <script src="/js/jquery/jquery-1.12.4.min.js"></script>
 <script src="http://res2.wx.qq.com/open/js/jweixin-1.4.0.js "></script>
@@ -53,7 +46,7 @@
                                 console.log(res1);
                             }
                         });
-                    });
+                    })
                     $.ajax({
                         url : '/wx/js/getImg?img='+img,     //将上传的照片id发送给后端
                         type: 'get',

@@ -30,13 +30,7 @@ class JssdkController extends Controller
         $data=[
             'jsconfig'=>$js_config
         ];//写入数组
-
         return view("weixin.jssdk",$data);
     }
 
-    
-    public function getImg()
-    {
-        echo '<pre>';print_r($_GET);echo '</pre>';
-    }
 }
