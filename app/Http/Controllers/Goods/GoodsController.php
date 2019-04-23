@@ -37,7 +37,7 @@ class GoodsController extends Controller
         $redis_cache_goods_key='h:goods_id'.$goods_id;//给定哈希key值
         $cache_info=Redis::hGetAll($redis_cache_goods_key);//存入哈希数据
 
-        if($cache_info){//如果有值打印值
+        if($cache_info){//如果有值输出值
             print_r($cache_info);
         }else{//如果没值存入redis缓存
             $goods_info=GoodsModel::where(['goods_id'=>$goods_id])->first()->toArray();
