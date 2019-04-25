@@ -53,3 +53,5 @@ Route::get('/goods/cachegoods/{goods_id?}', 'Goods\GoodsController@cacheGoods');
 Route::get("/wx/js/test","Wechat\JssdkController@jsTest");  //jssdk测试
 Route::get('/wx/js/getImg', 'Wechat\JssdkController@getImg');      //获取JSSDK上传的照片
 
+Route::get("/interval/time","Interval\IntervalController@interval");//定时任务,删除过期的订单
+
