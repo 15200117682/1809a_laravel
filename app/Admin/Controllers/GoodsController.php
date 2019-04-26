@@ -80,8 +80,7 @@ class GoodsController extends Controller
     protected function grid()
     {
         $grid = new Grid(new GoodsModel);
-
-        $grid->goods_id('商品id');
+        
         $grid->goods_name('商品名称');
         $grid->goods_price('商品价格');
         $grid->goods_status('商品状态');
